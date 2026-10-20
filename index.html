@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Uzbek Animelar Olami</title>
+<meta name="description" content="Uzbek Animelar Olami — anime katalogi va onlayn tomosha. O'zbek tilida anime, yangi qismlar, trend anime. Ilovani yuklab oling!">
+<meta name="keywords" content="uzbek animelar olami, anime uz, anime o'zbek tilida, anime katalogi, anime tomosha qilish, animelar olami">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://musayeva951.github.io/uzbek-animelar-olami/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Uzbek Animelar Olami","alternateName":"Animelar Olami","url":"https://musayeva951.github.io/uzbek-animelar-olami/","description":"Uzbek Animelar Olami — anime katalogi va onlayn tomosha."}</script>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://musayeva951.github.io/uzbek-animelar-olami/">
+<meta property="og:site_name" content="Uzbek Animelar Olami">
+<meta property="og:title" content="Uzbek Animelar Olami">
+<meta property="og:description" content="Uzbek Animelar Olami — anime katalogi va onlayn tomosha. Ilovani yuklab oling!">
+<meta property="og:image" content="https://musayeva951.github.io/uzbek-animelar-olami/icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Uzbek Animelar Olami">
+<meta name="twitter:description" content="Uzbek Animelar Olami — anime katalogi va onlayn tomosha. Ilovani yuklab oling!">
+<meta name="twitter:image" content="https://musayeva951.github.io/uzbek-animelar-olami/icon-512.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Uzbek Animelar Olami">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{--bg:#0a0e1a;--card:#141a2e;--card2:#1a2138;--accent:#7c3aed;--accent2:#a78bfa;--green:#22c55e;--red:#ef4444;--gold:#fbbf24;--txt:#f1f5f9;--muted:#8b9bb4;--line:#232c4d}
+html,body{min-height:100%}
+body{background:linear-gradient(rgba(5,7,15,.60),rgba(5,7,15,.78)),url('bg.jpg') center center/cover no-repeat fixed,var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;padding-bottom:84px}
+/* Topbar */
+.topbar{display:flex;align-items:center;gap:10px;padding:12px 14px;background:rgba(10,14,26,.94);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-size:20px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:1px;flex-shrink:0}
+.logo b{color:var(--accent2)}
+.search-wrap{flex:1;position:relative}
+.search-wrap input{width:100%;padding:10px 14px 10px 38px;border-radius:20px;border:1px solid #2a3352;background:#131a30;color:#fff;font-size:14px;outline:none}
+.search-wrap input:focus{border-color:var(--accent)}
+.search-wrap .s-ico{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.bell{position:relative;width:40px;height:40px;border-radius:50%;background:#131a30;border:1px solid #2a3352;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;flex-shrink:0}
+/* Hero */
+.hero{margin:14px;border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid #2a3352;min-height:190px;display:none;touch-action:pan-y}
+.hero-info{flex:1;padding:20px 16px;display:flex;flex-direction:column;justify-content:center;z-index:2;min-width:0}
+.trend-badge{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:800;padding:5px 12px;border-radius:8px;margin-bottom:10px;width:fit-content}
+.hero-title{font-size:24px;font-weight:900;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-genres{color:var(--accent2);font-size:13px;margin-bottom:14px}
+.hero-btns{display:flex;gap:10px;align-items:center}
+.watch-btn{background:var(--accent);color:#fff;border:none;padding:12px 22px;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:8px}
+.add-btn{width:46px;height:46px;border-radius:50%;border:1px solid #3b4769;background:rgba(255,255,255,.06);color:#fff;font-size:22px;cursor:pointer;flex-shrink:0}
+.hero-poster{width:130px;flex-shrink:0;position:relative}
+.hero-poster img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.hero-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:3}
+.hero-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer}
+.hero-dots span.on{background:#fff;width:22px;border-radius:4px}
+/* Sections */
+.sec{margin:18px 14px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.sec-title{font-size:17px;font-weight:900}
+.sec-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.sec-link{color:var(--accent2);font-size:13px;text-decoration:none;font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line);cursor:pointer}
+.card-poster{position:relative;aspect-ratio:3/4;background:linear-gradient(135deg,#1e1b4b,#0f172a)}
+.card-poster img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.prem-badge{position:absolute;top:8px;left:8px;z-index:2;background:rgba(0,0,0,.55);border-radius:8px;padding:3px 7px;font-size:12px}
+.bepul-badge{position:absolute;top:8px;left:8px;z-index:2;background:var(--green);color:#fff;font-size:10px;font-weight:800;border-radius:8px;padding:4px 8px}
+.card-fav{position:absolute;top:6px;right:6px;z-index:2;background:rgba(0,0,0,.55);border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;color:#fff}
+.card-body{padding:10px 12px}
+.card-title{font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-genres{font-size:12px;color:var(--muted);margin-top:4px}
+/* TOP 10 */
+.top10{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+.top10::-webkit-scrollbar{display:none}
+.top-item{flex-shrink:0;width:110px;cursor:pointer}
+.top-rank{display:flex;align-items:flex-start;gap:2px}
+.top-num{font-size:42px;font-weight:900;color:transparent;-webkit-text-stroke:2px var(--accent2);line-height:1;margin-right:2px}
+.top-card{position:relative;width:76px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid var(--line)}
+.top-card img{width:100%;height:100%;object-fit:cover}
+.top-name{font-size:12px;font-weight:700;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Bottom nav */
+.bottomnav{position:fixed;bottom:0;left:0;right:0;display:flex;background:rgba(10,14,26,.97);border-top:1px solid var(--line);z-index:100;padding:8px 4px calc(8px + env(safe-area-inset-bottom))}
+.nav-it{flex:1;background:none;border:none;color:var(--muted);font-size:11px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;padding:4px}
+.nav-it .ni{font-size:21px}
+.nav-it.on{color:#fff}
+.nav-it.on .ni{filter:drop-shadow(0 0 6px var(--accent))}
+/* Chat */
+#chatBox{background:var(--card);border:1px solid var(--line);border-radius:14px;height:380px;overflow-y:auto;padding:12px;margin-bottom:10px}
+.chat-row{display:flex;gap:8px}
+.chat-row input{flex:1;padding:12px;border-radius:12px;border:1px solid #2a3352;background:#131a30;color:#fff;font-size:14px;outline:none}
+.chat-send{background:var(--accent);border:none;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;cursor:pointer;font-size:16px}
+.chat-as{color:var(--muted);font-size:12px;margin-top:8px}
+/* Profile */
+.prof-card{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px}
+.prof-user{display:flex;align-items:center;gap:14px;padding:18px 16px}
+.prof-ava{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#4c1d95);display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;color:#fff;flex-shrink:0;overflow:hidden}
+.prof-name{font-size:17px;font-weight:900}
+.prof-id{font-size:12px;color:var(--muted);margin-top:2px}
+.prof-status{display:flex;justify-content:space-between;align-items:center;padding:0 16px 18px}
+.prof-badge{background:#2a3352;color:#cbd5e1;font-size:11px;font-weight:800;padding:4px 10px;border-radius:8px}
+.prof-prem-btn{background:#2a3352;border:1px solid #3b4769;color:#fff;padding:12px 20px;border-radius:14px;font-weight:800;font-size:14px;cursor:pointer}
+.prof-row{display:flex;align-items:center;gap:14px;padding:16px;cursor:pointer}
+.prof-ico{width:46px;height:46px;border-radius:50%;background:#2a1a0a;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.prof-label{color:var(--muted);font-size:12px;font-weight:800;letter-spacing:1px;margin:18px 16px 10px}
+.prof-logout{display:block;width:calc(100% - 28px);margin:6px 14px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;color:#a5b4d4;font-size:15px;font-weight:700;cursor:pointer}
+.hist-item{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid #1e2542;cursor:pointer}
+.hist-item:last-child{border:none}
+.hist-item img{width:52px;height:70px;object-fit:cover;border-radius:8px;background:#1e2745}
+/* Modal + player */
+.modal{display:none;position:fixed;inset:0;background:rgba(4,6,12,.97);z-index:2000;justify-content:center;align-items:flex-start;overflow-y:auto;padding:14px 0}
+.modal-content{background:var(--card);padding:16px;border-radius:16px;width:94%;max-width:720px;border:1px solid #2a3352;margin:auto}
+.modal-content h3{color:var(--accent2);margin-bottom:12px;font-size:18px}
+.episodes-box{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;max-height:160px;overflow-y:auto}
+.episode-btn{background:#232c4d;color:#fff;border:1px solid #334155;padding:9px 13px;border-radius:8px;cursor:pointer;font-weight:700;min-width:70px;font-size:13px}
+.episode-btn.active{background:var(--accent);border-color:var(--accent)}
+.player-wrap{position:relative;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:16/9;margin-bottom:12px}
+.player-wrap video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+/* Pseudo-fullscreen: Fullscreen API bloklangan WebView'lar uchun */
+.player-wrap.pseudo-full{position:fixed !important;inset:0 !important;width:100vw !important;height:100vh !important;height:100dvh !important;z-index:99999 !important;border-radius:0 !important;aspect-ratio:auto !important;margin:0 !important}
+/* To'liq ekran + yotqizilgan holat (landscape): video 6x4 markazda, qora fon atrofida */
+@media (orientation: landscape){
+  .player-wrap:fullscreen video,
+  .player-wrap:-webkit-full-screen video,
+  .player-wrap.pseudo-full video{
+    inset:auto !important;left:50% !important;top:50% !important;
+    transform:translate(-50%,-50%) !important;
+    width:min(100vw,150vh) !important;height:auto !important;
+    aspect-ratio:6/4 !important;object-fit:cover !important;
+  }
+  video:fullscreen,
+  video:-webkit-full-screen{
+    left:0 !important;right:0 !important;top:0 !important;bottom:0 !important;margin:auto !important;
+    width:min(100vw,150vh) !important;height:auto !important;
+    aspect-ratio:6/4 !important;object-fit:cover !important;
+  }
+}
+.tap-layer{position:absolute;inset:0;z-index:3}
+.p-controls{position:absolute;left:0;right:0;bottom:0;z-index:4;padding:6px 8px 4px;background:linear-gradient(transparent,rgba(0,0,0,.85));opacity:1;transition:opacity .3s}
+.p-controls.hide{opacity:0;pointer-events:none}
+.p-progress{position:relative;height:22px;cursor:pointer;touch-action:none}
+.p-track{position:absolute;top:9px;left:0;right:0;height:4px;background:rgba(255,255,255,.25);border-radius:2px}
+.p-buffered{position:absolute;top:9px;left:0;height:4px;background:rgba(255,255,255,.45);border-radius:2px;width:0}
+.p-played{position:absolute;top:9px;left:0;height:4px;background:#f00;border-radius:2px;width:0}
+.p-knob{position:absolute;top:5px;width:12px;height:12px;background:#f00;border-radius:50%;transform:translateX(-50%);left:0;box-shadow:0 0 6px rgba(255,0,0,.7)}
+.p-btns{display:flex;align-items:center;gap:2px}
+.p-btn{background:none;border:none;color:#fff;font-size:18px;cursor:pointer;padding:8px 10px}
+.p-time{color:#fff;font-size:12px;margin-left:2px;white-space:nowrap}
+.p-err{position:absolute;inset:0;z-index:5;display:none;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#000;color:#fff;text-align:center;padding:20px}
+.p-err.show{display:flex}
+.p-retry{background:var(--accent);border:none;color:#fff;padding:10px 26px;border-radius:20px;font-weight:800;cursor:pointer}
+.p-spin{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;display:none}
+.p-seek-hint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.72);color:#fff;font-size:20px;font-weight:800;padding:12px 20px;border-radius:12px;opacity:0;transition:opacity .25s;z-index:6;pointer-events:none}
+.btn{background:var(--accent);color:#fff;padding:12px;border:none;border-radius:10px;cursor:pointer;font-weight:800;width:100%;font-size:15px}
+.close-btn{background:#334155;margin-top:8px}
+.premium-note{text-align:center;color:var(--gold);padding:18px 8px;font-weight:700;line-height:1.8}
+.status-box{text-align:center;padding:36px 16px;color:var(--muted)}
+.spinner{width:40px;height:40px;margin:0 auto 14px;border:4px solid #232c4d;border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.retry-btn{margin-top:12px;padding:10px 26px;border-radius:20px;border:none;cursor:pointer;background:var(--accent);color:#fff;font-weight:800}
+.hidden{display:none!important}
+/* Shorts */
+.shorts-filter{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.shorts-filter button{background:#232c4d;color:#fff;border:1px solid #334155;padding:9px 14px;border-radius:20px;cursor:pointer;font-weight:700;font-size:13px}
+.shorts-filter button.on{background:var(--accent);border-color:var(--accent)}
+.shorts-stage{background:#000;border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:420px;margin:0 auto}
+.shorts-video{width:100%;aspect-ratio:9/16;background:#000;display:block;object-fit:contain}
+.shorts-meta{padding:12px 14px}
+.shorts-type{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:8px;margin-bottom:8px}
+.shorts-type.auto{background:#0ea5e9}
+.shorts-title{font-size:15px;font-weight:800;line-height:1.4;word-wrap:break-word}
+.shorts-sub{font-size:12px;color:var(--muted);margin-top:4px}
+.shorts-note{font-size:12px;color:var(--gold);margin-top:6px}
+.shorts-btns{display:flex;gap:8px;margin-top:12px}
+.shorts-btn{flex:1;background:#232c4d;color:#fff;border:1px solid #334155;padding:11px;border-radius:12px;cursor:pointer;font-weight:800;font-size:14px}
+.shorts-btn.primary{background:var(--accent);border-color:var(--accent)}
+.shorts-empty{color:var(--muted);padding:20px;text-align:center}
+.shorts-hint{font-size:12px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.6}
+.empty-note{color:var(--muted);padding:20px;text-align:center;grid-column:1/-1}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="#" class="logo" onclick="return false">Animelar<b>Olami</b></a>
+  <div class="search-wrap">
+    <span class="s-ico">🔍</span>
+    <input type="text" id="searchInput" placeholder="Qidirish..." autocomplete="off">
+  </div>
+  <div class="bell" id="bellBtn">🔔</div>
+  <div class="bell" id="installBtn" style="display:none" title="Ilovani yuklab olish">📥</div>
+</div>
+<audio id="bgm" loop preload="auto"></audio>
+
+<div id="homeView">
+  <div class="hero" id="heroBox">
+    <div class="hero-info">
+      <span class="trend-badge">🔥 TRENDDA</span>
+      <div class="hero-title" id="heroTitle"></div>
+      <div class="hero-genres" id="heroGenres"></div>
+      <div class="hero-btns">
+        <button class="watch-btn" id="heroWatch">▶ Tomosha qilish</button>
+        <button class="add-btn" id="heroFav">+</button>
+      </div>
+    </div>
+    <div class="hero-poster"><img id="heroPoster" alt=""></div>
+    <div class="hero-dots" id="heroDots"></div>
+  </div>
+
+  <div class="sec" id="newSec">
+    <div class="sec-head"><div><div class="sec-title">Yangi qo'shilganlar</div></div><a class="sec-link" href="#" id="showAllLink">Barchasi →</a></div>
+    <div id="statusBox" class="status-box"><div class="spinner"></div>Yuklanmoqda...</div>
+    <div class="grid2" id="newGrid"></div>
+  </div>
+
+  <div class="sec hidden" id="searchSec">
+    <div class="sec-head"><div class="sec-title" id="searchTitle">Qidiruv</div></div>
+    <div class="grid2" id="searchGrid"></div>
+  </div>
+
+  <div class="sec" id="topSec" style="display:none">
+    <div class="sec-head"><div><div class="sec-title">🏆 TOP 10 reyting</div><div class="sec-sub">Eng saralangan animelar</div></div></div>
+    <div class="top10" id="topList"></div>
+  </div>
+</div>
+
+<div class="sec hidden" id="favSec">
+  <div class="sec-head"><div class="sec-title">❤ Sevimlilar</div></div>
+  <div class="grid2" id="favGrid"></div>
+</div>
+
+<div class="sec hidden" id="shortsSec">
+  <div class="sec-head"><div class="sec-title">🎬 Shorts</div></div>
+  <div id="shortsEmpty" class="shorts-empty hidden">Hali short yo'q.<br>Admin botda Short qo'shsa, shu yerda ko'rinadi.</div>
+  <div id="shortsStage" class="shorts-stage hidden">
+    <video id="shortsVideo" class="shorts-video" playsinline controls preload="metadata"></video>
+    <div class="shorts-meta">
+      <span id="shortsTypeBadge" class="shorts-type">Short</span>
+      <div id="shortsTitle" class="shorts-title"></div>
+      <div id="shortsSub" class="shorts-sub"></div>
+      <div id="shortsNote" class="shorts-note hidden"></div>
+      <div class="shorts-btns">
+        <button class="shorts-btn" id="shortsPrevBtn">⬆ Oldingi</button>
+        <button class="shorts-btn primary" id="shortsNextBtn">Keyingi ⬇</button>
+      </div>
+      <div class="shorts-btns">
+        <button class="shorts-btn" id="shortsFullBtn" style="width:100%">▶ Tomosha qilish</button>
+      </div>
+    </div>
+  </div>
+  <div class="shorts-hint">Yuqoriga / pastga surib keyingi shortga o'ting.</div>
+</div>
+
+<div class="sec hidden" id="premSec">
+  <div class="sec-head"><div class="sec-title">💎 Premium obuna</div></div>
+  <div style="background:linear-gradient(135deg,#7c3aed,#4c1d95);border-radius:16px;padding:20px;margin-bottom:12px;border:1px solid #a78bfa">
+    <div style="font-size:17px;font-weight:900;margin-bottom:12px">💎 PREMIUM TARIFLAR</div>
+    <div style="background:rgba(0,0,0,.3);border-radius:12px;padding:14px;margin-bottom:10px">
+      <div style="font-weight:800;font-size:15px">🗓 1 oylik — 15 000 so'm</div>
+      <div style="color:#d8b4fe;font-size:13px;margin-top:4px">Barcha premium animelar ochiladi</div>
+    </div>
+    <div style="background:rgba(0,0,0,.3);border-radius:12px;padding:14px;margin-bottom:14px">
+      <div style="font-weight:800;font-size:15px">🗓 2 oylik — 25 000 so'm <span style="background:#22c55e;color:#fff;font-size:11px;padding:3px 8px;border-radius:8px">TEJAMKOR</span></div>
+      <div style="color:#d8b4fe;font-size:13px;margin-top:4px">2 oyga arzonroq!</div>
+    </div>
+    <div style="font-size:14px;line-height:1.7">
+      💳 <b>To'lov:</b> Click / Payme<br><br>
+      📝 To'lov qilib, chekni adminga yuboring:<br>
+      <a href="https://t.me/umid_ss7" style="display:inline-block;margin-top:10px;background:#fff;color:#7c3aed;font-weight:800;padding:12px 24px;border-radius:12px;text-decoration:none">👤 Adminga yozish</a>
+    </div>
+  </div>
+  <div style="background:#141a2e;border-radius:12px;padding:14px;border:1px solid #232c4d;font-size:13px;color:#8b9bb4;line-height:1.6">
+    🎁 <b style="color:#fff">Yoki tekinga oling!</b><br>
+    3 ta do'stingizni taklif qiling va 1 oylik Premium sovg'a sifatida oling.<br>
+    Botda <b style="color:#fff">🎁 Do'st taklif qilish</b> tugmasini bosing!
+  </div>
+</div>
+
+<div class="sec hidden" id="chatSec">
+  <div class="sec-head"><div class="sec-title">💬 Umumiy chat</div></div>
+  <div id="chatBox"></div>
+  <div class="chat-row">
+    <input type="text" id="chatInput" placeholder="Xabar yozing..." maxlength="500" autocomplete="off">
+    <button class="chat-send" id="chatSendBtn">➤</button>
+  </div>
+  <div class="chat-as" id="chatAs"></div>
+</div>
+
+<div class="sec hidden" id="profilSec">
+  <div class="prof-card">
+    <div class="prof-user">
+      <div class="prof-ava" id="profAva">👤</div>
+      <div style="flex:1;min-width:0">
+        <div class="prof-name" id="profName">Mehmon</div>
+        <div class="prof-id" id="profId">Uzbek Animelar Olami</div>
+      </div>
+      <div class="bell" id="profBell">🔔</div>
+    </div>
+    <div class="prof-status">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="font-size:14px">🔒 Bepul</span>
+          <span class="prof-badge">FAOL EMAS</span>
+        </div>
+        <div style="font-size:26px;font-weight:900">0 <span style="font-size:15px;font-weight:400;color:var(--muted)">ball</span></div>
+      </div>
+      <button class="prof-prem-btn" id="profPremBtn">Premium olish →</button>
+    </div>
+  </div>
+  <div class="prof-card" id="loginCard" style="display:none">
+    <div style="font-weight:800;font-size:15px;margin-bottom:4px">Kirish / Ro'yxatdan o'tish</div>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:12px">Google akkaunt yoki Telegram orqali kiring.</div>
+    <div id="googleBtnWrap" style="margin-bottom:10px"></div>
+    <div id="telegramBtnWrap"></div>
+  </div>
+  <div class="prof-label">ASOSIY</div>
+  <div class="prof-card" style="padding:0">
+    <div class="prof-row" id="rowPremium">
+      <div class="prof-ico">👑</div><div style="flex:1;font-weight:700">Premium obuna</div><span style="color:var(--muted)">›</span>
+    </div>
+    <div class="prof-row" id="rowSaved" style="border-top:1px solid #232c4d">
+      <div class="prof-ico">🔖</div><div style="flex:1;font-weight:700">Saqlangan animelar</div><span style="color:var(--muted)">›</span>
+    </div>
+  </div>
+  <div class="prof-label">XIZMATLAR</div>
+  <div class="prof-card" style="padding:0">
+    <div class="prof-row" id="rowPromo">
+      <div class="prof-ico">🎟️</div><div style="flex:1;font-weight:700">Promo-kod</div><span style="color:var(--muted)">›</span>
+    </div>
+    <a class="prof-row" href="https://t.me/umid_ss7" style="border-top:1px solid #232c4d;text-decoration:none;color:inherit">
+      <div class="prof-ico">🎬</div><div style="flex:1;font-weight:700">Anime so'rash</div><span style="color:var(--muted)">›</span>
+    </a>
+    <a class="prof-row" href="https://t.me/umid_ss7" style="border-top:1px solid #232c4d;text-decoration:none;color:inherit">
+      <div class="prof-ico">🎧</div><div style="flex:1;font-weight:700">Qo'llab-quvvatlash</div><span style="color:var(--muted)">›</span>
+    </a>
+    <div class="prof-row" id="rowInstall" style="border-top:1px solid #232c4d;display:none">
+      <div class="prof-ico">📥</div><div style="flex:1;font-weight:700">Ilovani yuklab olish</div><span style="color:var(--muted)">›</span>
+    </div>
+  </div>
+  <div class="prof-label">🕘 TOMOSHA TARIXI</div>
+  <div class="prof-card" id="watchHistBox" style="padding:6px 0">
+    <div style="color:var(--muted);text-align:center;padding:14px">Hali tarix bo'sh.</div>
+  </div>
+  <button class="prof-logout" id="logoutBtn">↪ Hisobdan chiqish</button>
+</div>
+
+<nav class="bottomnav">
+  <button class="nav-it on" data-v="home"><span class="ni">🏠</span>Bosh</button>
+  <button class="nav-it" data-v="premium"><span class="ni">💎</span>Premium</button>
+  <button class="nav-it" data-v="chat"><span class="ni">💬</span>Chat</button>
+  <button class="nav-it" data-v="shorts"><span class="ni">🎬</span>Shorts</button>
+  <button class="nav-it" data-v="sevimli"><span class="ni">❤</span>Sevimli</button>
+  <button class="nav-it" data-v="profil"><span class="ni">👤</span>Profil</button>
+</nav>
+
+<div class="modal" id="watchModal">
+  <div class="modal-content">
+    <h3 id="watchTitle">Anime</h3>
+    <div class="episodes-box" id="episodesArea"></div>
+    <div class="player-wrap" id="playerWrap" style="display:none">
+      <video id="sitePlayer" playsinline preload="metadata"></video>
+      <div class="tap-layer" id="tapLayer"></div>
+      <div class="p-spin" id="pSpin"><div class="spinner"></div></div>
+      <div class="p-seek-hint" id="pSeekHint"></div>
+      <div class="p-err" id="pErr">
+        <div style="font-size:40px">⚠️</div>
+        <div style="font-weight:800">Video yuklanmadi</div>
+        <div style="font-size:13px;color:#a5b4d4">Server bilan bog'lanib bo'lmadi.<br>Keyinroq urinib ko'ring.</div>
+        <button class="p-retry" id="pRetry">🔄 Qayta urinish</button>
+      </div>
+      <div class="p-controls" id="pControls">
+        <div class="p-progress" id="pProgress">
+          <div class="p-track"></div>
+          <div class="p-buffered" id="pBuffered"></div>
+          <div class="p-played" id="pPlayed"></div>
+          <div class="p-knob" id="pKnob"></div>
+        </div>
+        <div class="p-btns">
+          <button class="p-btn" id="pPlayBtn">▶</button>
+          <button class="p-btn" id="pBack10">⏪</button>
+          <button class="p-btn" id="pFwd10">⏩</button>
+          <span class="p-time"><span id="pCur">0:00</span> / <span id="pDur">0:00</span></span>
+          <span style="flex:1"></span>
+          <button class="p-btn" id="pMuteBtn">🔊</button>
+          <button class="p-btn" id="pFullBtn">⛶</button>
+        </div>
+      </div>
+    </div>
+    <div class="premium-note hidden" id="premiumNote">💎 Premium kontent — tomosha qilish uchun botga o'ting<br><br><button class="retry-btn" id="premiumGoBtn">📱 Botda ochish</button></div>
+    <button class="btn close-btn" id="closeWatchBtn">Yopish</button>
+  </div>
+</div>
+<script>
+(function(){
+"use strict";
+var API_BASE = "https://animed-test.fadehost.app";
+var BOT_LINK = "https://t.me/uzbek_animelar_olami_bot?start=";
+var animes = [];
+var favs = [];
+try { favs = JSON.parse(localStorage.getItem("uao_animed_favs") || "[]"); } catch(e){ favs = []; }
+
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function posterURL(a){ return API_BASE + (a.poster || ""); }
+var HOLAT_TXT = { kino:"🎬 Kino", ongoing:"➡ Ongoing", tugatigan:"✅ Tugatigan" };
+function holatTxt(h){ return HOLAT_TXT[h] || esc(h||""); }
+
+/* ---------- Sevimlilar ---------- */
+function saveFavs(){ try{ localStorage.setItem("uao_animed_favs", JSON.stringify(favs)); }catch(e){} }
+function isFav(kod){ return favs.indexOf(Number(kod)) !== -1; }
+window.toggleFav = function(ev, kod){
+  if(ev){ ev.stopPropagation(); }
+  kod = Number(kod);
+  var i = favs.indexOf(kod);
+  if(i === -1) favs.push(kod); else favs.splice(i,1);
+  saveFavs(); renderAll();
+};
+function findAnime(kod){
+  kod = Number(kod);
+  for(var i=0;i<animes.length;i++) if(Number(animes[i].kod)===kod) return animes[i];
+  return null;
+}
+
+/* ---------- Kartalar ---------- */
+function cardHTML(a){
+  var fav = isFav(a.kod);
+  return '<div class="card" data-kod="'+a.kod+'">'+
+    '<div class="card-poster">'+
+    (a.is_premium ? '<span class="prem-badge">💎</span>' : '<span class="bepul-badge">BEPUL</span>')+
+    '<button class="card-fav" data-fav="'+a.kod+'">'+(fav?'❤️':'🤍')+'</button>'+
+    '<img src="'+esc(posterURL(a))+'" loading="lazy" alt="" onerror="this.remove()">'+
+    '</div><div class="card-body"><div class="card-title">'+esc(a.title)+'</div>'+
+    '<div class="card-genres">'+holatTxt(a.holat)+' • '+(a.qism_soni||0)+' qism</div></div></div>';
+}
+function bindCards(root){
+  var cards = root.querySelectorAll(".card");
+  for(var i=0;i<cards.length;i++){
+    (function(c){
+      c.addEventListener("click", function(){ openAnime(c.getAttribute("data-kod")); });
+      var f = c.querySelector("[data-fav]");
+      if(f) f.addEventListener("click", function(ev){ window.toggleFav(ev, f.getAttribute("data-fav")); });
+    })(cards[i]);
+  }
+}
+
+/* ---------- Hero (TRENDDA) ---------- */
+var heroIdx = 0, heroTimer = null;
+function heroCount(){ return Math.min(animes.length, 5); }
+function showHero(i){
+  var n = heroCount();
+  if(!n) return;
+  heroIdx = ((i % n) + n) % n;
+  var a = animes[heroIdx];
+  if(!a) return;
+  $("heroBox").style.display = "flex";
+  $("heroTitle").textContent = a.title || "";
+  $("heroGenres").textContent = holatTxt(a.holat) + " • " + (a.qism_soni||0) + " qism";
+  var hp = $("heroPoster");
+  hp.onerror = function(){ hp.removeAttribute("src"); };
+  hp.src = posterURL(a);
+  $("heroWatch").onclick = function(){ openAnime(a.kod); };
+  var hf = $("heroFav");
+  hf.textContent = isFav(a.kod) ? "❤️" : "+";
+  hf.onclick = function(ev){ window.toggleFav(ev, a.kod); };
+  var dots = $("heroDots");
+  dots.innerHTML = "";
+  for(var d=0; d<n; d++){
+    (function(idx){
+      var s = document.createElement("span");
+      if(idx === heroIdx) s.className = "on";
+      s.addEventListener("click", function(ev){ ev.stopPropagation(); showHero(idx); resetHeroAuto(); });
+      dots.appendChild(s);
+    })(d);
+  }
+}
+function startHeroAuto(){ stopHeroAuto(); if(heroCount() > 1){ heroTimer = setInterval(function(){ showHero(heroIdx+1); }, 5000); } }
+function stopHeroAuto(){ if(heroTimer){ clearInterval(heroTimer); heroTimer = null; } }
+function resetHeroAuto(){ startHeroAuto(); }
+(function(){
+  var hb = $("heroBox"), sx = 0;
+  hb.addEventListener("touchstart", function(e){ sx = e.touches[0].clientX; stopHeroAuto(); }, {passive:true});
+  hb.addEventListener("touchend", function(e){
+    var dx = e.changedTouches[0].clientX - sx;
+    if(Math.abs(dx) > 40) showHero(heroIdx + (dx < 0 ? 1 : -1));
+    resetHeroAuto();
+  }, {passive:true});
+})();
+
+/* ---------- Render ---------- */
+function renderNew(){
+  var g = $("newGrid");
+  g.innerHTML = animes.length ? animes.map(cardHTML).join("") : '<div class="empty-note">Hali anime qo\'shilmagan</div>';
+  bindCards(g);
+}
+function renderTop(){
+  var box = $("topSec");
+  if(animes.length < 2){ box.style.display = "none"; return; }
+  box.style.display = "block";
+  $("topList").innerHTML = animes.slice(0,10).map(function(a,i){
+    var t = a.title || "";
+    if(t.length > 14) t = t.slice(0,14) + "…";
+    return '<div class="top-item" data-kod="'+a.kod+'"><div class="top-rank"><span class="top-num">'+(i+1)+
+      '</span><div class="top-card"><img src="'+esc(posterURL(a))+'" loading="lazy" alt="" onerror="this.remove()"></div></div>'+
+      '<div class="top-name">'+esc(t)+'</div></div>';
+  }).join("");
+  bindCards($("topList"));
+}
+function renderFavs(){
+  var g = $("favGrid");
+  var list = animes.filter(function(a){ return isFav(a.kod); });
+  g.innerHTML = list.length ? list.map(cardHTML).join("") : '<div class="empty-note">Hali sevimli anime yo\'q 🤍</div>';
+  bindCards(g);
+}
+function renderHero(){ if(animes.length){ showHero(0); startHeroAuto(); } }
+function renderAll(){ renderHero(); renderNew(); renderTop(); renderFavs(); }
+
+/* ---------- Qidiruv ---------- */
+$("searchInput").addEventListener("input", function(){
+  var q = $("searchInput").value.toLowerCase().trim();
+  var show = q.length > 0;
+  $("searchSec").classList.toggle("hidden", !show);
+  $("homeView").classList.toggle("hidden", show);
+  if(!show) return;
+  var list = animes.filter(function(a){ return (a.title||"").toLowerCase().indexOf(q) !== -1; });
+  $("searchTitle").textContent = 'Qidiruv: "' + q + '"';
+  var g = $("searchGrid");
+  g.innerHTML = list.length ? list.map(cardHTML).join("") : '<div class="empty-note">Topilmadi 😕</div>';
+  bindCards(g);
+});
+$("showAllLink").addEventListener("click", function(e){
+  e.preventDefault();
+  $("searchInput").value = "";
+  $("searchInput").dispatchEvent(new Event("input"));
+  window.scrollTo(0,0);
+});
+function bellSoon(){ alert("Bildirishnomalar tez orada! 🔔"); }
+$("bellBtn").addEventListener("click", bellSoon);
+$("profBell").addEventListener("click", bellSoon);
+
+/* ---------- Navigatsiya ---------- */
+var VIEWS = { home:["homeView"], premium:["premSec"], chat:["chatSec"], shorts:["shortsSec"], sevimli:["favSec"], profil:["profilSec"] };
+window.goTab = function(v){
+  var btn = document.querySelector('.nav-it[data-v="'+v+'"]');
+  if(btn) btn.click();
+};
+document.querySelectorAll(".nav-it").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll(".nav-it").forEach(function(x){ x.classList.remove("on"); });
+    b.classList.add("on");
+    var v = b.dataset.v;
+    ["homeView","premSec","chatSec","shortsSec","favSec","profilSec"].forEach(function(id){ $(id).classList.add("hidden"); });
+    (VIEWS[v]||["homeView"]).forEach(function(id){ $(id).classList.remove("hidden"); });
+    if(v === "sevimli") renderFavs();
+    if(v === "shorts"){ pauseMusic(); loadShorts(); }
+    else pauseShorts();
+    if(v === "chat"){ $("chatAs").textContent = "✏️ " + getUserName() + " nomidan yozasiz"; loadChat(); startChatPoll(); }
+    else stopChatPoll();
+    if(v === "profil") renderProfile();
+    window.scrollTo(0,0);
+  });
+});
+$("profPremBtn").addEventListener("click", function(){ window.goTab("premium"); });
+$("rowPremium").addEventListener("click", function(){ window.goTab("premium"); });
+$("rowSaved").addEventListener("click", function(){ window.goTab("sevimli"); });
+$("rowPromo").addEventListener("click", function(){
+  var k = prompt("Promo-kodni kiriting:");
+  if(k && k.trim()) alert("Promo-kod qabul qilindi! Tekshiruvdan so'ng faollashadi. 🎟️");
+});
+$("logoutBtn").addEventListener("click", function(){
+  if(confirm("Chiqmoqchimisiz?")){
+    try{ localStorage.removeItem("uao_animed_name"); localStorage.removeItem("uao_animed_pic"); localStorage.removeItem("uao_chat_name"); clearAuth(); }catch(e){}
+    renderProfile();
+  }
+});
+
+/* ---------- YouTube-uslubidagi pleyer ---------- */
+var v = $("sitePlayer");
+var pPlayed = $("pPlayed"), pBuffered = $("pBuffered"), pKnob = $("pKnob");
+var pCur = $("pCur"), pDur = $("pDur"), pSpin = $("pSpin"), pErr = $("pErr");
+var pControls = $("pControls"), pPlayBtn = $("pPlayBtn");
+var curKod = null, curQism = null, ctrlTimer = null;
+
+function fmt(s){
+  s = Math.max(0, Math.floor(s || 0));
+  var m = Math.floor(s/60), ss = s % 60;
+  return m + ":" + (ss < 10 ? "0" : "") + ss;
+}
+function showControls(){ pControls.classList.remove("hide"); pokeControls(); }
+function pokeControls(){
+  if(ctrlTimer) clearTimeout(ctrlTimer);
+  ctrlTimer = setTimeout(function(){ if(!v.paused) pControls.classList.add("hide"); }, 3000);
+}
+function setPlayIcon(){ pPlayBtn.textContent = v.paused ? "▶" : "⏸"; }
+function togglePlay(){
+  if(v.paused){ v.play().catch(function(){}); }
+  else { v.pause(); }
+  setPlayIcon(); showControls();
+}
+function seekBy(d){
+  if(!v.duration) return;
+  v.currentTime = Math.max(0, Math.min(v.duration, v.currentTime + d));
+  seekHint((d > 0 ? "+" : "") + d + " s");
+  showControls();
+}
+var hintT = null;
+function seekHint(t){
+  var h = $("pSeekHint");
+  h.textContent = t; h.style.opacity = "1";
+  if(hintT) clearTimeout(hintT);
+  hintT = setTimeout(function(){ h.style.opacity = "0"; }, 700);
+}
+function showErr(){ pErr.classList.add("show"); pSpin.style.display = "none"; }
+function hideErr(){ pErr.classList.remove("show"); }
+
+/* Bitta / ikki marta bosishni ajratish */
+var tapTimer = null, tapX = 0, tapCount = 0;
+function onTapLayer(e){
+  var x, y;
+  if(e.changedTouches && e.changedTouches.length){ x = e.changedTouches[0].clientX; y = e.changedTouches[0].clientY; }
+  else { x = e.clientX; y = e.clientY; }
+  tapCount++;
+  tapX = x;
+  if(tapTimer) clearTimeout(tapTimer);
+  if(tapCount === 1){
+    tapTimer = setTimeout(function(){
+      tapCount = 0; tapTimer = null;
+      togglePlay();
+    }, 280);
+  } else if(tapCount === 2){
+    tapCount = 0; tapTimer = null;
+    var r = $("tapLayer").getBoundingClientRect();
+    var rel = (x - r.left) / r.width;
+    if(rel < 0.4) seekBy(-10);
+    else if(rel > 0.6) seekBy(10);
+    else togglePlay();
+  }
+}
+$("tapLayer").addEventListener("touchend", function(e){ e.preventDefault(); onTapLayer(e); }, {passive:false});
+$("tapLayer").addEventListener("click", function(e){ onTapLayer(e); });
+$("tapLayer").addEventListener("touchmove", function(){ if(tapTimer){ clearTimeout(tapTimer); tapTimer = null; tapCount = 0; } }, {passive:true});
+
+pPlayBtn.addEventListener("click", function(e){ e.stopPropagation(); togglePlay(); });
+$("pBack10").addEventListener("click", function(e){ e.stopPropagation(); seekBy(-10); });
+$("pFwd10").addEventListener("click", function(e){ e.stopPropagation(); seekBy(10); });
+$("pMuteBtn").addEventListener("click", function(e){
+  e.stopPropagation();
+  v.muted = !v.muted;
+  $("pMuteBtn").textContent = v.muted ? "🔇" : "🔊";
+  showControls();
+});
+function toggleFullscreen(){
+  var wrap = $("playerWrap");
+  // Pseudo-fullscreen bo'lsa — chiqish
+  if(wrap.classList.contains("pseudo-full")){ wrap.classList.remove("pseudo-full"); return; }
+  // Native fullscreen bo'lsa — chiqish
+  if(document.fullscreenElement || document.webkitFullscreenElement){
+    if(document.exitFullscreen) document.exitFullscreen();
+    else if(document.webkitExitFullscreen) document.webkitExitFullscreen();
+    return;
+  }
+  // Kirish: bir nechta usulni ketma-ket urinamiz
+  var steps = [
+    function(){ return wrap.requestFullscreen(); },
+    function(){ return v.requestFullscreen(); },
+    function(){ if(v.webkitEnterFullscreen) v.webkitEnterFullscreen(); else throw new Error("no webkitEnter"); },
+    function(){ if(wrap.webkitRequestFullscreen) wrap.webkitRequestFullscreen(); else throw new Error("no webkitReq"); }
+  ];
+  var i = 0;
+  function next(){
+    if(i >= steps.length){ wrap.classList.add("pseudo-full"); return; }
+    var fn = steps[i++];
+    var r;
+    try{ r = fn(); }catch(err){ next(); return; }
+    if(r && r.then){ r.then(function(){}).catch(function(){ next(); }); }
+    // sync usul xato bermasa — muvaffaqiyatli deb hisoblaymiz
+  }
+  next();
+}
+$("pFullBtn").addEventListener("click", function(e){ e.stopPropagation(); toggleFullscreen(); });
+document.addEventListener("fullscreenchange", function(){ if(!document.fullscreenElement) $("playerWrap").classList.remove("pseudo-full"); });
+document.addEventListener("webkitfullscreenchange", function(){ if(!document.webkitFullscreenElement) $("playerWrap").classList.remove("pseudo-full"); });
+
+/* Progress chizig'i: bosish + surish */
+var scrubbing = false;
+function scrubTo(clientX){
+  var r = $("pProgress").getBoundingClientRect();
+  var p = (clientX - r.left) / r.width;
+  p = Math.max(0, Math.min(1, p));
+  if(v.duration) v.currentTime = p * v.duration;
+}
+$("pProgress").addEventListener("mousedown", function(e){ scrubbing = true; scrubTo(e.clientX); });
+document.addEventListener("mousemove", function(e){ if(scrubbing) scrubTo(e.clientX); });
+document.addEventListener("mouseup", function(){ scrubbing = false; });
+$("pProgress").addEventListener("touchstart", function(e){ scrubbing = true; scrubTo(e.touches[0].clientX); e.preventDefault(); }, {passive:false});
+$("pProgress").addEventListener("touchmove", function(e){ if(scrubbing) scrubTo(e.touches[0].clientX); e.preventDefault(); }, {passive:false});
+$("pProgress").addEventListener("touchend", function(){ scrubbing = false; });
+
+/* Video hodisalari */
+v.addEventListener("play", function(){ setPlayIcon(); pSpin.style.display = "none"; hideErr(); pokeControls(); });
+v.addEventListener("pause", function(){ setPlayIcon(); pControls.classList.remove("hide"); if(ctrlTimer) clearTimeout(ctrlTimer); });
+v.addEventListener("waiting", function(){ pSpin.style.display = "block"; });
+v.addEventListener("playing", function(){ pSpin.style.display = "none"; hideErr(); });
+v.addEventListener("canplay", function(){ pSpin.style.display = "none"; });
+v.addEventListener("loadedmetadata", function(){ pDur.textContent = fmt(v.duration); });
+v.addEventListener("timeupdate", function(){
+  if(!v.duration) return;
+  var p = v.currentTime / v.duration * 100;
+  pPlayed.style.width = p + "%"; pKnob.style.left = p + "%";
+  pCur.textContent = fmt(v.currentTime);
+});
+v.addEventListener("progress", function(){
+  try{
+    if(v.buffered.length && v.duration){
+      pBuffered.style.width = (v.buffered.end(v.buffered.length-1) / v.duration * 100) + "%";
+    }
+  }catch(e){}
+});
+v.addEventListener("ended", function(){
+  var btns = document.querySelectorAll(".episode-btn");
+  for(var i=0;i<btns.length;i++){
+    if(btns[i].classList.contains("active") && btns[i+1]){ btns[i+1].click(); return; }
+  }
+});
+v.addEventListener("error", function(){
+  var err = v.error;
+  if(!v.getAttribute("src")) return;
+  if(err && err.code === 1) return; // MEDIA_ERR_ABORTED: src o'zgardi, yangi yuklanish boshlanadi — haqiqiy xato emas
+  // Tarmoq uzilsa (4G/VPN), bir marta avtomatik qayta urinish — joriy vaqtdan davom etadi
+  if(err && err.code === 2 && !v._retried){
+    v._retried = true;
+    var t = v.currentTime || 0;
+    hideErr();
+    v.load();
+    var onMeta = function(){
+      v.removeEventListener("loadedmetadata", onMeta);
+      try{ if(t > 0 && t < v.duration) v.currentTime = t; }catch(e){}
+      v.play().catch(function(){});
+    };
+    v.addEventListener("loadedmetadata", onMeta);
+    return;
+  }
+  // Haqiqiy xato: qayta yuklashga ruxsat berish uchun loaded belgini tozalaymiz,
+  // aks holda "Qayta urinish" buzilgan elementda play() chaqirib qoladi.
+  v._loadedKod = null; v._loadedQism = null;
+  showErr();
+});
+$("pRetry").addEventListener("click", function(){
+  hideErr();
+  if(curKod && curQism) playEp(curKod, curQism, null);
+});
+
+/* Qismni ijro etish */
+window.playEp = function(kod, qism, btn){
+  kod = Number(kod); qism = Number(qism);
+  var btns = document.querySelectorAll(".episode-btn");
+  for(var i=0;i<btns.length;i++) btns[i].classList.remove("active");
+  if(btn) btn.classList.add("active");
+  pauseMusic();
+  var a = findAnime(kod);
+  if(a) saveWatchHist(kod, a.title, a.poster, qism);
+  curKod = kod; curQism = qism;
+  // Ayni qism allaqachon yuklangan bo'lsa, qayta yuklamaymiz:
+  // v.load() avvalgi yuklanishni bekor qilib MEDIA_ERR_ABORTED beradi.
+  if(v.getAttribute("src") && v._loadedKod === kod && v._loadedQism === qism){
+    v.play().catch(function(){});
+    showControls();
+    return;
+  }
+  v._loadedKod = kod; v._loadedQism = qism; v._retried = false;
+  $("playerWrap").style.display = "block";
+  hideErr();
+  pPlayed.style.width = "0%"; pKnob.style.left = "0%"; pBuffered.style.width = "0%";
+  pCur.textContent = "0:00"; pDur.textContent = "0:00";
+  pSpin.style.display = "block";
+  v.src = API_BASE + "/api/video/" + kod + "/" + qism;
+  v.load();
+  v.play().catch(function(){});
+  showControls();
+};
+
+/* Anime ochish */
+window.openAnime = function(kod){
+  kod = Number(kod);
+  var a = findAnime(kod);
+  $("watchTitle").textContent = a ? a.title : "Anime";
+  $("watchModal").style.display = "flex";
+  document.body.style.overflow = "hidden";
+  $("playerWrap").style.display = "none";
+  var eps = $("episodesArea"), pnote = $("premiumNote");
+  if(a && a.is_premium){
+    eps.innerHTML = "";
+    pnote.classList.remove("hidden");
+    $("premiumGoBtn").onclick = function(){ pauseMusic(); location.href = BOT_LINK + kod; };
+    return;
+  }
+  pnote.classList.add("hidden");
+  eps.innerHTML = '<div class="spinner"></div>';
+  fetch(API_BASE + "/api/anime/" + kod)
+    .then(function(r){ if(!r.ok) throw new Error("http"); return r.json(); })
+    .then(function(d){
+      var qs = (d.anime && d.anime.qismlar) || [];
+      if(!qs.length){ eps.innerHTML = '<div class="empty-note">Qismlar topilmadi.</div>'; return; }
+      eps.innerHTML = "";
+      qs.forEach(function(q, i){
+        var b = document.createElement("button");
+        b.className = "episode-btn" + (i === 0 ? " active" : "");
+        b.textContent = q + "-qism";
+        b.addEventListener("click", (function(k, qq, btn){ return function(){ window.playEp(k, qq, btn); }; })(kod, q, b));
+        eps.appendChild(b);
+      });
+      window.playEp(kod, qs[0], eps.firstChild);
+    })
+    .catch(function(){ eps.innerHTML = '<div class="empty-note">Xatolik yuz berdi.<br><button class="retry-btn" id="epRetry">Qayta urinish</button></div>'; $("epRetry").addEventListener("click", function(){ window.openAnime(kod); }); });
+};
+$("closeWatchBtn").addEventListener("click", function(){
+  v.pause(); v.removeAttribute("src"); v.load();
+  v._loadedKod = null; v._loadedQism = null; v._retried = false;
+  hideErr();
+  $("watchModal").style.display = "none";
+  document.body.style.overflow = "";
+  curKod = null; curQism = null;
+  if(musicOK && musicStarted && $("shortsSec").classList.contains("hidden")){ audio.play().catch(function(){}); }
+});
+$("watchModal").addEventListener("click", function(e){
+  if(e.target === $("watchModal")) $("closeWatchBtn").click();
+});
+
+/* ---------- Chat ---------- */
+var chatTimer = null;
+function loadChat(){
+  fetch(API_BASE + "/api/chat")
+    .then(function(r){ if(!r.ok) throw new Error("http"); return r.json(); })
+    .then(function(d){
+      if(!d.ok) return;
+      var box = $("chatBox");
+      var msgs = d.messages || [];
+      box.innerHTML = msgs.length ? msgs.map(function(m){
+        return '<div style="margin-bottom:10px"><div style="font-size:12px;color:#a78bfa;font-weight:700">'+esc(m.user)+
+          ' <span style="color:#5b6b8c;font-weight:400">'+esc(m.time)+'</span></div>'+
+          '<div style="background:#1e2745;border-radius:10px;padding:8px 12px;margin-top:3px;font-size:14px;word-wrap:break-word">'+esc(m.text)+'</div></div>';
+      }).join("") : "<p style='color:#5b6b8c;text-align:center;padding:20px'>Hali xabarlar yo'q — birinchi bo'ling! 👋</p>";
+      box.scrollTop = box.scrollHeight;
+    }).catch(function(){});
+}
+function startChatPoll(){ stopChatPoll(); chatTimer = setInterval(loadChat, 5000); }
+function stopChatPoll(){ if(chatTimer){ clearInterval(chatTimer); chatTimer = null; } }
+function getUserName(){
+  var name = "";
+  try{
+    if(window.Telegram && Telegram.WebApp && Telegram.WebApp.initDataUnsafe && Telegram.WebApp.initDataUnsafe.user){
+      var u = Telegram.WebApp.initDataUnsafe.user;
+      if(u.username) name = "@" + u.username;
+      else if(u.first_name) name = u.first_name;
+    }
+  }catch(e){}
+  if(!name){ try{ name = localStorage.getItem("uao_animed_name") || localStorage.getItem("uao_chat_name") || ""; }catch(e){} }
+  return name || "Anonim";
+}
+function sendChat(){
+  var inp = $("chatInput");
+  var text = inp.value.trim();
+  if(!text) return;
+  var btn = $("chatSendBtn");
+  btn.disabled = true;
+  var chatName = getUserName();
+  var chatKey = chatName.trim().toLowerCase().replace(/^@/, "");
+  if(chatKey === "kitagawa" || chatKey === "umid_ss7" || chatKey === "admin" || chatKey === "animed" || chatKey === "animed.uz"){ chatName = "Anonim"; }
+  fetch(API_BASE + "/api/chat/send", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ username: chatName, text: text })
+  }).then(function(r){ if(!r.ok) throw new Error("http"); return r.json(); })
+    .then(function(){ inp.value = ""; loadChat(); })
+    .catch(function(){ alert("Xabar yuborilmadi. Qayta urinib ko'ring."); })
+    .finally(function(){ btn.disabled = false; });
+}
+$("chatSendBtn").addEventListener("click", sendChat);
+$("chatInput").addEventListener("keydown", function(e){ if(e.key === "Enter") sendChat(); });
+
+/* ---------- Kirish (Google / Telegram) ---------- */
+var AUTH_CONFIG = {
+  googleClientId: "",
+  googleEnabled: false,
+  telegramEnabled: false,
+  telegramBot: "uzbek_animelar_olami_bot"
+};
+function getAuth(){ try{ return JSON.parse(localStorage.getItem("uao_animed_auth") || "null"); }catch(e){ return null; } }
+function setAuth(a){ try{ localStorage.setItem("uao_animed_auth", JSON.stringify(a)); }catch(e){} }
+function clearAuth(){ try{ localStorage.removeItem("uao_animed_auth"); }catch(e){} }
+function onGoogleCredential(resp){
+  try{
+    var parts = resp.credential.split(".");
+    var payload = JSON.parse(atob(parts[1].replace(/-/g, "+").replace(/_/g, "/")));
+    setAuth({provider: "google", name: payload.name || payload.email || "Google", pic: payload.picture || "", handle: payload.email || "Google", verified: true, at: Date.now()});
+    renderProfile();
+  }catch(e){ alert("Google orqali kirishda xato."); }
+}
+function onTelegramAuth(user){
+  fetch(API_BASE + "/api/auth/telegram", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(user)})
+    .then(function(r){ if(!r.ok) throw new Error("verify"); return r.json(); })
+    .then(function(d){
+      if(!d.ok || !d.user) throw new Error("verify");
+      var u = d.user;
+      var handle = u.username ? "@" + u.username : (u.first_name || "Telegram");
+      setAuth({provider: "telegram", name: handle, pic: u.photo_url || "", handle: handle, tgId: u.id, verified: true, at: Date.now()});
+      renderProfile();
+    })
+    .catch(function(){ alert("Telegram orqali kirishni tasdiqlab bo'lmadi. Qayta urinib ko'ring."); });
+}
+window.onTelegramAuth = onTelegramAuth;
+function renderLogin(){
+  var card = $("loginCard"); if(!card) return;
+  var auth = getAuth();
+  card.style.display = (auth && auth.verified) ? "none" : "block";
+  if(auth && auth.verified) return;
+  var g = $("googleBtnWrap");
+  if(AUTH_CONFIG.googleEnabled && AUTH_CONFIG.googleClientId && window.google && google.accounts && google.accounts.id){
+    g.innerHTML = "";
+    google.accounts.id.initialize({client_id: AUTH_CONFIG.googleClientId, callback: onGoogleCredential});
+    google.accounts.id.renderButton(g, {theme: "filled_black", size: "large", width: 280, text: "signin_with"});
+  } else {
+    g.innerHTML = '<button class="prof-prem-btn" style="width:100%;text-align:center" onclick="alert(\'Google orqali kirish tez orada yoqiladi.\')">G &nbsp; Google orqali kirish</button>';
+  }
+  var t = $("telegramBtnWrap");
+  if(AUTH_CONFIG.telegramEnabled){
+    t.innerHTML = "";
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://telegram.org/js/telegram-widget.js?22";
+    s.setAttribute("data-telegram-login", AUTH_CONFIG.telegramBot);
+    s.setAttribute("data-size", "large");
+    s.setAttribute("data-onauth", "onTelegramAuth(user)");
+    s.setAttribute("data-request-access", "write");
+    t.appendChild(s);
+  } else {
+    t.innerHTML = '<button class="prof-prem-btn" style="width:100%;text-align:center" onclick="alert(\'Telegram orqali kirish tez orada yoqiladi.\')">✈️ &nbsp; Telegram orqali kirish</button>';
+  }
+}
+
+/* ---------- Profil ---------- */
+function renderProfile(){
+  var name = "", pic = "", fromTg = false, authVerified = false;
+  var auth = getAuth();
+  if(auth && auth.verified){
+    name = auth.name || ""; pic = auth.pic || ""; authVerified = true;
+    try{ localStorage.setItem("uao_animed_name", name); if(pic) localStorage.setItem("uao_animed_pic", pic); }catch(e){}
+  }
+  if(!name){
+    try{
+      if(window.Telegram && Telegram.WebApp && Telegram.WebApp.initDataUnsafe && Telegram.WebApp.initDataUnsafe.user){
+        var u = Telegram.WebApp.initDataUnsafe.user;
+        if(u.username) name = "@" + u.username;
+        else if(u.first_name) name = u.first_name;
+        if(u.photo_url) pic = u.photo_url;
+        fromTg = true;
+        try{ localStorage.setItem("uao_animed_name", name); if(pic) localStorage.setItem("uao_animed_pic", pic); }catch(e){}
+      }
+    }catch(e){}
+  }
+  if(!name){ try{ name = localStorage.getItem("uao_animed_name") || ""; pic = localStorage.getItem("uao_animed_pic") || ""; }catch(e){} }
+  if(!name) name = "Mehmon";
+  $("profName").textContent = name;
+  var pid = $("profId");
+  if(pid){ pid.textContent = authVerified ? (auth.handle || auth.provider) : "Uzbek Animelar Olami"; }
+  renderLogin();
+  var ava = $("profAva");
+  if(pic){ ava.innerHTML = '<img src="'+esc(pic)+'" style="width:100%;height:100%;border-radius:50%;object-fit:cover" onerror="this.remove()">'; }
+  else { ava.textContent = name.charAt(0).toUpperCase(); }
+  var nm = $("profName");
+  nm.onclick = null;
+  if(!fromTg && !authVerified){
+    nm.style.cursor = "pointer";
+    nm.title = "O'zgartirish uchun bosing";
+    nm.onclick = function(){
+      var n = prompt("Ismingizni kiriting:", name === "Mehmon" ? "" : name);
+      if(n && n.trim()){ try{ localStorage.setItem("uao_animed_name", n.trim()); }catch(e){} renderProfile(); }
+    };
+  } else { nm.style.cursor = "default"; nm.title = ""; }
+  var hist = [];
+  try{ hist = JSON.parse(localStorage.getItem("uao_watch_hist") || "[]"); }catch(e){}
+  var box = $("watchHistBox");
+  if(!hist.length){ box.innerHTML = '<div style="color:var(--muted);text-align:center;padding:14px">Hali tarix bo\'sh.</div>'; return; }
+  box.innerHTML = "";
+  hist.slice(0, 10).forEach(function(h){
+    var row = document.createElement("div");
+    row.className = "hist-item";
+    row.innerHTML = '<img src="'+esc(API_BASE + (h.poster||""))+'" onerror="this.remove()">'+
+      '<div style="flex:1;min-width:0"><div style="font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(h.title)+'</div>'+
+      '<div style="color:var(--muted);font-size:12px">'+h.qism+'-qism tomosha qilindi</div></div>'+
+      '<span style="color:var(--muted)">›</span>';
+    row.addEventListener("click", function(){ window.openAnime(h.kod); });
+    box.appendChild(row);
+  });
+}
+function saveWatchHist(kod, title, poster, qism){
+  var hist = [];
+  try{ hist = JSON.parse(localStorage.getItem("uao_watch_hist") || "[]"); }catch(e){}
+  hist = hist.filter(function(h){ return Number(h.kod) !== Number(kod); });
+  hist.unshift({kod:kod, title:title, poster:poster, qism:qism});
+  try{ localStorage.setItem("uao_watch_hist", JSON.stringify(hist.slice(0, 20))); }catch(e){}
+}
+
+/* ---------- Musiqa + fon ---------- */
+var audio = $("bgm");
+var musicOK = false, musicStarted = false;
+fetch(API_BASE + "/api/site-config")
+  .then(function(r){ if(!r.ok) throw new Error("http"); return r.json(); })
+  .then(function(cfg){
+    if(cfg.bg){
+      if(cfg.bg_type === "video"){
+        var vb = document.createElement("video");
+        vb.src = API_BASE + cfg.bg;
+        vb.autoplay = true; vb.muted = true; vb.loop = true; vb.playsInline = true;
+        vb.setAttribute("playsinline","");
+        vb.style.cssText = "position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;";
+        document.body.appendChild(vb);
+        vb.play().catch(function(){});
+      } else {
+        var img = new Image();
+        img.onload = function(){
+          document.body.style.backgroundImage = "url('"+API_BASE+cfg.bg+"')";
+          document.body.style.backgroundSize = "cover";
+          document.body.style.backgroundPosition = "center";
+          document.body.style.backgroundAttachment = "fixed";
+        };
+        img.src = API_BASE + cfg.bg;
+      }
+    }
+    if(cfg.music){ audio.src = API_BASE + cfg.music; audio.load(); }
+  }).catch(function(){});
+audio.addEventListener("canplaythrough", function(){ musicOK = true; audio.play().catch(function(){}); }, {once:true});
+audio.addEventListener("error", function(){ musicOK = false; });
+function startMusic(){ if(!musicStarted && musicOK && audio.paused){ var ss = $("shortsSec"); if(ss && !ss.classList.contains("hidden")) return; musicStarted = true; audio.play().catch(function(){}); } }
+["click","touchstart","scroll","keydown"].forEach(function(ev){ document.addEventListener(ev, startMusic, {once:true, passive:true}); });
+function pauseMusic(){ if(musicOK && !audio.paused) audio.pause(); }
+
+/* ---------- Shorts ---------- */
+/* Faqat admin yuklagan shortlar (botdan, /api/shorts). Qismlardan avtomatik short yo'q. */
+var shortsList = [], shortsFiltered = [], shortsIdx = 0, shortsLoaded = false;
+var sv = $("shortsVideo");
+
+function pauseShorts(){
+  try{ if(sv && !sv.paused) sv.pause(); }catch(e){}
+}
+function shortsItemLabel(s){
+  return s.sarlavha ? s.sarlavha : (s.anime_title || "Short");
+}
+function applyShortsFilter(){
+  shortsFiltered = shortsList.slice();
+  shortsIdx = 0;
+  showShort(shortsIdx);
+}
+function showShort(i){
+  var stage = $("shortsStage"), empty = $("shortsEmpty");
+  if(!shortsFiltered.length){
+    stage.classList.add("hidden"); empty.classList.remove("hidden");
+    pauseShorts(); sv.removeAttribute("src"); sv.load();
+    return;
+  }
+  empty.classList.add("hidden"); stage.classList.remove("hidden");
+  shortsIdx = ((i % shortsFiltered.length) + shortsFiltered.length) % shortsFiltered.length;
+  var s = shortsFiltered[shortsIdx];
+  var badge = $("shortsTypeBadge");
+  badge.textContent = "Admin short"; badge.className = "shorts-type";
+  $("shortsTitle").textContent = shortsItemLabel(s);
+  $("shortsSub").textContent = s.anime_title ? s.anime_title : "";
+  $("shortsNote").classList.add("hidden");
+  $("shortsFullBtn").style.display = "block";
+  // Ayni video allaqachon yuklangan bo'lsa qayta yuklamaymiz
+  if(sv.getAttribute("src") !== s.videoUrl){
+    sv.src = s.videoUrl;
+    sv.load();
+  }
+  sv.play().catch(function(){});
+}
+function shortsNext(){ if(shortsFiltered.length) showShort(shortsIdx + 1); }
+function shortsPrev(){ if(shortsFiltered.length) showShort(shortsIdx - 1); }
+$("shortsNextBtn").addEventListener("click", shortsNext);
+$("shortsPrevBtn").addEventListener("click", shortsPrev);
+$("shortsFullBtn").addEventListener("click", function(){
+  var s = shortsFiltered[shortsIdx];
+  if(!s) return;
+  pauseShorts();
+  window.openAnime(s.anime_kod);
+});
+if(sv){
+  sv.addEventListener("ended", shortsNext);
+  sv.addEventListener("error", function(){
+    // Xatoda keyingi shortga o'tmaymiz — foydalanuvchi qo'lda o'tadi.
+  });
+  // Vertikal surish: yuqoriga = keyingi, pastga = oldingi
+  (function(){
+    var y0 = null;
+    sv.addEventListener("touchstart", function(e){ y0 = e.touches[0].clientY; }, {passive:true});
+    sv.addEventListener("touchend", function(e){
+      if(y0 === null) return;
+      var dy = e.changedTouches[0].clientY - y0;
+      if(Math.abs(dy) > 50){ if(dy < 0) shortsNext(); else shortsPrev(); }
+      y0 = null;
+    }, {passive:true});
+  })();
+}
+function loadShorts(){
+  if(shortsLoaded) { applyShortsFilter(); return; }
+  $("shortsEmpty").classList.add("hidden");
+  // Faqat admin yuklagan shortlar
+  fetch(API_BASE + "/api/shorts?_=" + Date.now())
+    .then(function(r){ if(!r.ok) throw new Error("http"); return r.json(); })
+    .then(function(d){ return (d.ok && d.shorts) ? d.shorts : []; })
+    .catch(function(){ return []; })
+    .then(function(list){
+      shortsList = list.map(function(s){
+        return { type: "admin", anime_kod: s.anime_kod, anime_title: s.anime_title || "", sarlavha: s.sarlavha || "", videoUrl: API_BASE + s.video };
+      });
+      shortsLoaded = true;
+      applyShortsFilter();
+    });
+}
+
+/* ---------- Yuklash ---------- */
+function loadAnimes(){
+  var sb = $("statusBox");
+  sb.style.display = "block";
+  sb.innerHTML = '<div class="spinner"></div>Yuklanmoqda...';
+  fetch(API_BASE + "/api/animes?_=" + Date.now())
+    .then(function(r){ if(!r.ok) throw new Error("http"); return r.json(); })
+    .then(function(d){
+      if(!d.ok) throw new Error("api");
+      animes = d.animes || [];
+      sb.style.display = "none";
+      renderAll();
+    })
+    .catch(function(){
+      sb.innerHTML = '⚠️ Bot bilan bog\'lanib bo\'lmadi.<br><button class="retry-btn" id="loadRetry">Qayta urinish</button>';
+      $("loadRetry").addEventListener("click", loadAnimes);
+    });
+}
+loadAnimes();
+})();
+// PWA: service worker
+if("serviceWorker" in navigator){ navigator.serviceWorker.register("sw.js").catch(function(){}); }
+// Ilovani yuklab olish tugmasi (PWA o'rnatish + APK)
+// MUHIM: tugma o'rnatilgan PWA (standalone) ichida ham ko'rinishi kerak —
+// PWA ≠ APK, foydalanuvchi APK ni yuklashi kerak bo'lishi mumkin.
+(function(){
+  var installBtn = document.getElementById("installBtn");
+  var rowInstall = document.getElementById("rowInstall");
+  var deferredPrompt = null;
+  var isAndroid = /Android/i.test(navigator.userAgent);
+  var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  function showInstall(){
+    if(installBtn) installBtn.style.display = "flex";
+    if(rowInstall) rowInstall.style.display = "flex";
+  }
+  function downloadApk(){
+    // Yuklab olishni to'g'ridan-to'g'ri boshlash (PWA oynasida ham ishlaydi)
+    var a = document.createElement("a");
+    a.href = "https://musayeva951.github.io/animed-site/animed-uz.apk";
+    a.setAttribute("download", "animed-uz.apk");
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+  function onInstallClick(){
+    // Yuqori 📥 tugma: PWA o'rnatish taklifi bo'lsa uni ko'rsat, bo'lmasa APK
+    if(deferredPrompt){
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
+      return;
+    }
+    if(isAndroid){ downloadApk(); return; }
+    if(isIOS){ alert("Ilovani o'rnatish uchun Safari'da Ulashish (Share) → Bosh ekranga qo'shish (Add to Home Screen) ni bosing."); return; }
+    alert("Ilovani o'rnatish uchun brauzer menyusidan O'rnatish / Install ni tanlang.");
+  }
+  function onApkClick(){
+    // Profil qatori: har doim to'g'ridan-to'g'ri APK yuklaydi
+    if(isAndroid){ downloadApk(); return; }
+    if(isIOS){ alert("Ilovani o'rnatish uchun Safari'da Ulashish (Share) → Bosh ekranga qo'shish (Add to Home Screen) ni bosing."); return; }
+    alert("Ilovani o'rnatish uchun brauzer menyusidan O'rnatish / Install ni tanlang.");
+  }
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    showInstall();
+  });
+  if(isAndroid || isIOS) showInstall();
+  if(installBtn) installBtn.addEventListener("click", onInstallClick);
+  if(rowInstall) rowInstall.addEventListener("click", onApkClick);
+})();
+</script>
+<footer style="max-width:1100px;margin:28px auto 10px;padding:18px 16px 26px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.7">
+  <h2 style="font-size:16px;color:var(--txt);margin-bottom:6px">Uzbek Animelar Olami</h2>
+  <p>Animed.uz — o'zbek tilida anime tomosha qilish uchun katalog. Saytda trenddagi animelar, yangi qo'shilgan anime va qidiruv mavjud. Animed.uz orqali sevimli animengni topib, onlayn tomosha qilishingiz mumkin.</p>
+  <p style="margin-top:8px">Anime qidirish, sevimlilar ro'yxati va yangi qismlar — barchasi Animed.uz da.</p>
+</footer>
+</body>
+</html>
